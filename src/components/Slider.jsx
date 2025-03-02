@@ -1,93 +1,65 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
+import Marquee from 'react-fast-marquee';
 
 const SuccessStoriesMarquee = () => {
-  const [startAnimation, setStartAnimation] = useState(false);
-  const scrollRef = useRef(null);
-  
   // Success stories data with placeholder images
   const successStories = [
     { 
       name: 'Siddharth', 
       company: 'ELECTRIC', 
-      image: '/api/placeholder/100/100',
-      logo: '/api/placeholder/80/30'
+      image: 's1.webp',
+      logo: 'l1.webp'
     },
     { 
       name: 'Vanshu Saini', 
       company: 'Paytm', 
-      image: '/api/placeholder/100/100',
-      logo: '/api/placeholder/80/30'
+      image: 's2.webp',
+      logo: 'l2.webp'
     },
     { 
       name: 'Miyanji Farhan', 
       company: 'Google', 
-      image: '/api/placeholder/100/100',
-      logo: '/api/placeholder/80/30'
+      image: 's3.webp',
+      logo: 'l3.webp'
     },
     { 
       name: 'Akshat Chhapolia', 
       company: 'INDmoney', 
-      image: '/api/placeholder/100/100',
-      logo: '/api/placeholder/80/30'
+      image: 's4.webp',
+      logo: 'l4.webp'
     },
     { 
       name: 'MANISH KUMAR', 
       company: 'Airtel', 
-      image: '/api/placeholder/100/100',
-      logo: '/api/placeholder/80/30' 
+      image: 's5.webp',
+      logo: 'l5.webp' 
     },
     { 
-      name: 'Tanmay Shresth', 
+      name: 'Tanya Shresth', 
       company: 'LogiLadder', 
-      image: '/api/placeholder/100/100',
-      logo: '/api/placeholder/80/30'
+      image: 's6.webp',
+      logo: 'l6.webp'
     },
     { 
-      name: 'Rohan Khollamkar', 
+      name: 'Roshni Khollamkar', 
       company: 'Perfios', 
-      image: '/api/placeholder/100/100',
-      logo: '/api/placeholder/80/30'
+      image: 's7.webp',
+      logo: 'l7.svg'
     },
     // Duplicate some entries to ensure continuous scrolling
     { 
       name: 'Siddharth', 
       company: 'ELECTRIC', 
-      image: '/api/placeholder/100/100',
-      logo: '/api/placeholder/80/30'
+      image: 's1.webp',
+      logo: 'l1.webp'
     },
     { 
       name: 'Vanshu Saini', 
       company: 'Paytm', 
-      image: '/api/placeholder/100/100',
-      logo: '/api/placeholder/80/30'
+      image: 's2.webp',
+      logo: 'l2.webp'
     }
   ];
-
-  useEffect(() => {
-    // Start animation after component mount
-    setStartAnimation(true);
-    
-    // Auto-scroll functionality
-    const scrollContainer = scrollRef.current;
-    if (!scrollContainer) return;
-    
-    let scrollAmount = 0;
-    const distance = 1; // pixels per frame
-    
-    const scroll = () => {
-      scrollContainer.scrollLeft += distance;
-      scrollAmount += distance;
-      
-      // Reset scroll position when reaching the end of duplicated items
-      if (scrollAmount >= (scrollContainer.scrollWidth - scrollContainer.clientWidth) / 2) {
-        scrollContainer.scrollLeft = 0;
-        scrollAmount = 0;
-      }
-    };
-    
-    const interval = setInterval(scroll, 30);
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div className="w-full bg-green-950 text-white py-12">
@@ -101,19 +73,17 @@ const SuccessStoriesMarquee = () => {
           {/* Right blur/fade effect */}
           <div className="absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-green-950 to-transparent z-10"></div>
           
-          <div 
-            ref={scrollRef}
-            className="flex overflow-x-hidden w-full"
-          >
-          <div className={`flex gap-4 transition-transform duration-1000 ${startAnimation ? 'translate-x-0' : 'translate-x-full'}`}>
+          {/* Marquee slider */}
+          <Marquee speed={50} gradient={false}>
             {successStories.map((story, index) => (
               <div 
                 key={index} 
-                className="flex-shrink-0 w-48 bg-white rounded-lg overflow-hidden text-black shadow-lg"
+                className="flex-shrink-0 w-48 bg-white rounded-lg overflow-hidden text-black shadow-lg mx-2"
+                style={{ height: '200px' }} // Adjust the height here
               >
                 <div className="p-4 flex flex-col items-center">
                   {/* Circle profile image */}
-                  <div className="w-24 h-24 rounded-full overflow-hidden mb-4">
+                  <div className="w-20 h-20 rounded-full overflow-hidden mb-4"> {/* Adjusted size */}
                     <img 
                       src={story.image} 
                       alt={story.name} 
@@ -135,8 +105,7 @@ const SuccessStoriesMarquee = () => {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
+          </Marquee>
         </div>
       </div>
     </div>

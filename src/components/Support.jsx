@@ -9,7 +9,7 @@ const PlacementSupport = () => {
         <div className="flex items-center gap-4">
           <div className="bg-gray-700 rounded-full w-16 h-16 flex items-center justify-center overflow-hidden">
             <img 
-              src="/api/placeholder/80/80" 
+              src="/a.webp" 
               alt="Support agent" 
               className="w-full h-full object-cover"
             />

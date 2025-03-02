@@ -15,13 +15,10 @@ const Navbar = () => {
         </div>
         
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center space-x-8">
+        <div className="hidden md:flex items-center space-x-10 lg:space-x-16">
           <div className="relative group">
             <button className="flex items-center text-white hover:text-green-300 focus:outline-none">
               Courses
-              <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-              </svg>
             </button>
           </div>
           
