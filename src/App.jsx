@@ -9,6 +9,7 @@ import CurriculumSection from './components/CurriculumSection'
 import LiveClassSchedule from './components/LiveClass'
 import PlacementSupport from './components/Support'
 import JobTitleComponent from './components/JobTitle'
+import BuildSkillsComponent from './components/BuildSkill'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -21,6 +22,7 @@ function App() {
       <LiveClassSchedule />
       <PlacementSupport />
       <JobTitleComponent />
+      <BuildSkillsComponent />
     </>
   )
 }
