@@ -10,7 +10,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="text-2xl font-bold">
           <a href="/" className="flex items-center">
-            nextLeap
+            nextleap
           </a>
         </div>
         
