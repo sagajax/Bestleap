@@ -22,6 +22,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <div className='h-20 bg-green-950'></div>
       <HeroSection />
       <Slider />
       <CurriculumSection />
