@@ -5,6 +5,10 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Slider from './components/Slider'
 import HeroSection from './components/Hero'
+import CurriculumSection from './components/CurriculumSection'
+import LiveClassSchedule from './components/LiveClass'
+import PlacementSupport from './components/Support'
+import JobTitleComponent from './components/JobTitle'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -13,6 +17,10 @@ function App() {
       <Navbar />
       <HeroSection />
       <Slider />
+      <CurriculumSection />
+      <LiveClassSchedule />
+      <PlacementSupport />
+      <JobTitleComponent />
     </>
   )
 }
