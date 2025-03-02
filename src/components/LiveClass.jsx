@@ -4,6 +4,7 @@ import { Calendar } from 'lucide-react';
 const LiveClassSchedule = () => {
   return (
     <div className="w-full bg-green-950 text-white py-16">
+                  <div className="border-t-3 border-gray-600  max-w-6xl mx-auto mt-16 mb-16"></div>
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Live Class Schedule</h2>
         

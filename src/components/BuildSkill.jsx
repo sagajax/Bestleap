@@ -78,7 +78,9 @@ const BuildSkillsComponent = () => {
 
   return (
     <div className="bg-green-950 text-white min-h-screen flex flex-col items-center py-16 px-4">
+      
       <div className="max-w-6xl w-full">
+      <div className="border-t-3 border-gray-600  max-w-6xl mx-0 mt-16 mb-16"></div>
         {/* Heading */}
         <h2 className="text-4xl font-bold text-center mb-16">Build Skills The Nextleap Way</h2>
 

@@ -26,7 +26,7 @@ const PlacementSupport = () => {
           </button>
         </div>
       </div>
-      <div className="border-t border-gray-600 max-w-6xl mx-auto mt-16 mb-16"></div>
+      <div className="border-t-2 border-gray-600 max-w-6xl mx-auto mt-16 mb-16"></div>
       {/* Main Heading */}
       <div className="text-center mb-6">
         <h1 className="text-5xl font-bold mb-4">1 Year Placement Support</h1>
@@ -63,7 +63,7 @@ const PlacementSupport = () => {
       </div>
 
       {/* Divider Lines */}
-      <div className="border-t border-gray-600 max-w-6xl mx-auto mt-16"></div>
+      <div className="border-t-2 border-gray-600 max-w-6xl mx-auto mt-16"></div>
 
       
     </div>

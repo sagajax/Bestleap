@@ -98,7 +98,7 @@ const JobTitleComponent = () => {
             </div>
           </div>
         </div>
-        
+        <div className="border-t-3 border-gray-600  max-w-6xl mx-0 mt-16 mb-16"></div>
         {/* Scholarship Section */}
         <div className="bg-green-50 text-black rounded-lg p-6 my-12 ">
           <div className="flex flex-col md:flex-row gap-6 items-center">

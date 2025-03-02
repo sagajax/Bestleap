@@ -16,6 +16,7 @@ const Tools = () => {
 
   return (
     <div className="bg-green-950 py-12">
+                  <div className="border-t-3 border-gray-600  max-w-6xl mx-auto mt-16 mb-16"></div>
       <div className="max-w-6xl mx-auto px-4">
         <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 md:mb-12 lg:mb-20">
           Tools You Will Learn
@@ -32,6 +33,7 @@ const Tools = () => {
           ))}
         </div>
       </div>
+      <div className="border-t-3 border-gray-600  max-w-6xl mx-auto mt-16 mb-16"></div>
     </div>
   );
 };

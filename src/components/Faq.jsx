@@ -76,7 +76,8 @@ const FAQSection = () => {
   ];
 
   return (
-    <div className="bg-green-950 w-full min-h-screen px-4 pt-6 pb-12">
+    <div className="bg-green-950 w-full min-h-screen px-4 pt-6 pb-12 ">
+            <div className="border-t-3 border-gray-600  max-w-6xl mx-auto mt-16 mb-16"></div>
       <div className="max-w-4xl mx-auto">
         <h1 className="text-white text-5xl font-bold mb-16">Frequently Asked Questions</h1>
         
