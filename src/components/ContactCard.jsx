@@ -3,7 +3,7 @@ import contactBg from '/contactbg.svg';
 
 const ContactCard = () => {
   return (
-    <div className="bg-green-950 px-4 pt-6 pb-12">
+    <div className="bg-green-950 px-4 pt-6 pb-24">
 
     <div className="w-full max-w-4xl mx-auto bg-green-800 rounded-lg shadow-lg p-12 relative overflow-hidden">
       {/* Main Content */}

@@ -14,6 +14,8 @@ import Tools from './components/Tools'
 import Certificate from './components/Certificate'
 import FAQSection from './components/Faq'
 import ContactCard from './components/ContactCard'
+import BottomFixedNavbar from './components/BottomFixedNavbar' // Import the component
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -31,6 +33,7 @@ function App() {
       <Certificate/>
       <FAQSection />
       <ContactCard />
+      <BottomFixedNavbar /> {/* Add the component at the end */}
     </>
   )
 }

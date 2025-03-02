@@ -43,6 +43,8 @@ const HeroSection = () => {
     return () => clearInterval(timer);
   }, []);
   return (
+    
+
     <div className="w-full bg-green-950 text-white py-16">
       <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row justify-between items-start gap-12">
         {/* Left Content Area */}
@@ -130,6 +132,7 @@ const HeroSection = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 
