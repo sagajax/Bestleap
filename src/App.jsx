@@ -10,6 +10,7 @@ import LiveClassSchedule from './components/LiveClass'
 import PlacementSupport from './components/Support'
 import JobTitleComponent from './components/JobTitle'
 import BuildSkillsComponent from './components/BuildSkill'
+import Tools from './components/Tools'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -23,6 +24,7 @@ function App() {
       <PlacementSupport />
       <JobTitleComponent />
       <BuildSkillsComponent />
+      <Tools />
     </>
   )
 }
